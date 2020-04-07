@@ -1,0 +1,45 @@
+Index: idea-git-test/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- idea-git-test/.idea/vcs.xml	(revision e1c5d984635692fc7dfdcf7662cdfcbcba1bf14f)
++++ idea-git-test/.idea/vcs.xml	(revision e1c5d984635692fc7dfdcf7662cdfcbcba1bf14f)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: idea-git-test/src/demo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- idea-git-test/src/demo.java	(revision e1c5d984635692fc7dfdcf7662cdfcbcba1bf14f)
++++ idea-git-test/src/demo.java	(revision e1c5d984635692fc7dfdcf7662cdfcbcba1bf14f)
+@@ -0,0 +1,7 @@
++import com.sun.tools.javac.Main;
++
++public class demo {
++    public static void main(String[] args) {
++        System.out.println("hello");
++    }
++}
+Index: select-course/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- select-course/.idea/vcs.xml	(revision eb0e2ef3c910205205371014a314296b5fba87d3)
++++ select-course/.idea/vcs.xml	(revision eb0e2ef3c910205205371014a314296b5fba87d3)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file

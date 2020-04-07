@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/select-course.iml" filepath="$PROJECT_DIR$/select-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/select-course-dao/select-course-dao.iml" filepath="$PROJECT_DIR$/select-course-dao/select-course-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/select-course-domain/select-course-domain.iml" filepath="$PROJECT_DIR$/select-course-domain/select-course-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/select-course-service/select-course-service.iml" filepath="$PROJECT_DIR$/select-course-service/select-course-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/select-course-utils/select-course-utils.iml" filepath="$PROJECT_DIR$/select-course-utils/select-course-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/select-course-web/select-course-web.iml" filepath="$PROJECT_DIR$/select-course-web/select-course-web.iml" />
+    </modules>
+  </component>
+</project>

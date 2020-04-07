@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="select-course-web:war">
+    <output-path>$PROJECT_DIR$/select-course-web/target</output-path>
+    <root id="archive" name="select-course-web.war">
+      <element id="artifact" artifact-name="select-course-web:war exploded" />
+    </root>
+  </artifact>
+</component>
