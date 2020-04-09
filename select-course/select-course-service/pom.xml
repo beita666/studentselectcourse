@@ -11,5 +11,18 @@
 
     <artifactId>select-course-service</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>ligong.select-course</groupId>
+            <artifactId>select-course-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ligong.select-course</groupId>
+            <artifactId>select-course-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
