@@ -15,11 +15,11 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="select-course" target="1.5" />
-      <module name="select-course-dao" target="1.5" />
-      <module name="select-course-domain" target="1.5" />
-      <module name="select-course-service" target="1.5" />
-      <module name="select-course-utils" target="1.5" />
-      <module name="select-course-web" target="1.7" />
+      <module name="select-course-dao" target="1.8" />
+      <module name="select-course-domain" target="1.8" />
+      <module name="select-course-service" target="1.8" />
+      <module name="select-course-utils" target="1.8" />
+      <module name="select-course-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
