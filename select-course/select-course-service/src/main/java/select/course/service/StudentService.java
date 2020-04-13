@@ -1,5 +1,6 @@
 package select.course.service;
 
+import select.course.domain.SelectCourse;
 import select.course.domain.Student;
 
 import java.util.List;
@@ -28,4 +29,20 @@ public interface StudentService {
      * @throws Exception
      */
     Student findByNum(String studentnum)throws Exception;
+
+    /**
+     * 根据studentNum查找成绩
+     * @param studentnum
+     * @return
+     * @throws Exception
+     */
+    List<SelectCourse> findScore(String studentnum) throws Exception;
+
+    /**
+     * 查找历史课程
+     * @param studentnum
+     * @return
+     * @throws Exception
+     */
+    List<SelectCourse> findHistoryCourse(String studentnum) throws Exception;
 }

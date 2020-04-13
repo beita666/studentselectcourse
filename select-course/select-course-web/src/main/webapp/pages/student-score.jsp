@@ -12,7 +12,7 @@
 
 
 
-<title>数据 - AdminLTE2定制版</title>
+<title>学生网上选课系统</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -172,12 +172,12 @@
 			<section class="content-header">
 				<h1>
 					个人中心
-					<small>个人信息</small>
+					<small>成绩</small>
 				</h1>
 				<ol class="breadcrumb">
 					<li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
 					<li><a href="#">个人中心</a></li>
-					<li class="active">个人信息</li>
+					<li class="active">成绩</li>
 				</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -234,44 +234,33 @@
 								<thead>
 									<tr>
 										<%--<th class="text-center">ID</th>--%>
-										<th class="text-center">学号</th>
-										<th class="text-center">姓名</th>
-										<th class="text-center">性别</th>
-										<th class="text-center">班级名称</th>
-										<th class="text-center">系别</th>
-										<th class="text-center">专业</th>
-										<th class="text-center">入学年份</th>
-										<th class="text-center">学生类型</th>
-										<th class="text-center">联系电话</th>
-										<th class="text-center">操作</th>
+											<th class="text-center">学号</th>
+											<th class="text-center">姓名</th>
+											<th class="text-center">课程名称</th>
+											<th class="text-center">学期</th>
+											<th class="text-center">学分</th>
+											<th class="text-center">学时</th>
+											<th class="text-center">课程类型</th>
+											<th class="text-center">成绩</th>
 									</tr>
 								</thead>
 								<tbody>
 
 
 									<%--<c:forEach items="${student}" var="students">--%>
-
+									<c:forEach items="${scorelist}" var="score">
 										<tr>
-
 											<%--<td class="text-center">${students.id }</td>--%>
-											<td class="text-center">${student.studentNum }</td>
-											<td class="text-center">${student.name }</td>
-											<td class="text-center">${student.sexStr }</td>
-											<td class="text-center">${student.studentClass.className }</td>
-											<td class="text-center">${student.departmentStr }</td>
-											<td class="text-center">${student.professionStr }</td>
-											<td class="text-center">${student.enterTimeStr }</td>
-											<td class="text-center">${student.typeStr }</td>
-											<td class="text-center">${student.phoneNumber }</td>
-
-
-											<td class="text-center">
-												<button type="button" class="btn bg-olive btn-xs">订单</button>
-												<button type="button" class="btn bg-olive btn-xs"
-														onclick="location.href='${pageContext.request.contextPath}/orders/findById.do?id=${orders.id}'">详情</button>
-												<button type="button" class="btn bg-olive btn-xs">编辑</button>
-											</td>
+												<td class="text-center">${list.studentNum}</td>
+												<td class="text-center">${list.name}</td>
+												<td class="text-center">${score.course.courseName}</td>
+												<td class="text-center">${score.course.term}</td>
+												<td class="text-center">${score.course.credit}</td>
+												<td class="text-center">${score.course.period}</td>
+												<td class="text-center">${score.course.courseType}</td>
+												<td class="text-center">${score.score}</td>
 										</tr>
+									</c:forEach>
 									<%--</c:forEach>--%>
 								</tbody>
 								<!--

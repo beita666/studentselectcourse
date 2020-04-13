@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-
+<script>
+   /* $(function () {
+        $("#student-message").click(function studentMess() {
+            $.post("${pageContext.request.contextPath}/student/findOne",{studentNum:${list.studentNum}});
+        });
+    });*/
+</script>
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -21,7 +27,7 @@
             <li class="header">菜单</li>
             <li id="admin-index"><a
                     <%--href="${pageContext.request.contextPath}/pages/student-main.jsp">--%>
-                href="#">
+                href="${pageContext.request.contextPath}/pages/student-main.jsp">
                 <i class="fa fa-dashboard"></i> <span>首页</span></a></li>
 
             <li class="treeview"><a href="#"> <i class="fa fa-cogs"></i>
@@ -38,7 +44,7 @@
                             class="fa fa-circle-o"></i> 个人信息
                     </a></li>
                     <li id="student-score"><a
-                            href="${pageContext.request.contextPath}/role/findAll.do"> <i
+                            href="${pageContext.request.contextPath}/student/findScore?studentNum=${list.studentNum}"> <i
                             class="fa fa-circle-o"></i> 成绩
                     </a></li>
                 </ul></li>
@@ -50,7 +56,7 @@
                 <ul class="treeview-menu">
 
                     <li id="history-course"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
+                            href="${pageContext.request.contextPath}/student/findSelectedCourse?studentNum=${list.studentNum}">
                         <i class="fa fa-circle-o"></i> 历史课程
                     </a></li>
                     <li id="new-course"><a

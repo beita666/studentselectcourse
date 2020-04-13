@@ -3,6 +3,7 @@ package select.course.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import select.course.domain.*;
 import select.course.service.AdminService;
@@ -10,6 +11,7 @@ import select.course.service.BigAdminService;
 import select.course.service.StudentService;
 import select.course.service.TeacherService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -34,12 +36,13 @@ public class LoginController {
      * @throws Exception
      */
     @RequestMapping("/loginTo")
-    public ModelAndView loginTo(login login) throws Exception{
+    public ModelAndView loginTo(login login, HttpSession session) throws Exception{
         ModelAndView mv=new ModelAndView();
         if(login.getTypeId()==1){
             Student student=studentService .findByName(login.getStudentNum(),login.getPassWord());
             if(student.getStudentNum()!=null){
-                mv.addObject("list",student);
+                session.setAttribute("list",student);
+               // mv.addObject("list",student);
                 mv.setViewName("student-main");
                 return mv;
             }else {
@@ -50,6 +53,7 @@ public class LoginController {
             Teacher teacher = teacherService.findByName(login.getStudentNum(), login.getPassWord());
             if (teacher.getId()!=null){
                 mv.addObject("list",teacher);
+
                 mv.setViewName("teacher-main");
                 return mv;
             }else {
@@ -90,4 +94,6 @@ public class LoginController {
         mv.setViewName("login");
         return mv;
     }
+
+
 }
